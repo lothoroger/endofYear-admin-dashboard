@@ -8,6 +8,7 @@ import { ProductsComponent } from './components/products/products.component'
 import { NotFoundComponent } from './components/not-found/not-found.component'
 
 const routes: Routes = [
+  { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
   { path: "about", component: AboutComponent },
   { path: "register", component: RegisterComponent },
