@@ -21,8 +21,10 @@ import { InvoiceComponent } from './components/pages/invoice/invoice.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
 import { SummaryComponent } from './components/pages/summary/summary.component';
 import { WishlistComponent } from './components/pages/wishlist/wishlist.component';
-import { ViewComponent } from './components/products/view/view.component';
-
+import { ProductViewComponent } from './components/products/product-view/product-view.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { HttpClientModule } from '@angular/common/http'
+import { ReactiveFormsModule } from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,11 +46,14 @@ import { ViewComponent } from './components/products/view/view.component';
     ProfileComponent,
     SummaryComponent,
     WishlistComponent,
-    ViewComponent
+    ProductViewComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
